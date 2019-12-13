@@ -1,0 +1,11 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+manticore-dev = {extras = ["dev-noks"],editable = true,path = "."}
+#keystone-engine = {git = "https://github.com/keystone-engine/keystone",subdirectory = "bindings/python"}
+
+[packages]
+manticore = {extras = ["native"],editable = true,path = "."}
